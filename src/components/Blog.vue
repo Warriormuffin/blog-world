@@ -2,7 +2,8 @@
  <div class="blog">
   <div>
     <h1>{{$route.params.title}}</h1>
-    <p></p>
+    <p>{{this.blog.body}}</p>
+    <p>{{this.blog.author}}</p>
   </div>
  </div>
 </template>
@@ -13,7 +14,12 @@ import {store} from '../store/blogStore'
     name: 'blog',
     data (){
       return{
+        blog: {},
+        title: this.$route.params.title
       }
+    },
+    mounted: function(){
+      this.blog = store.methods.getBlogByTitle(this.title)
     }
   }
 

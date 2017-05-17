@@ -6,7 +6,7 @@
       <div>
       <br>
         <ul v-for="blog in blogs">
-          <router-link  to="/blog/:title"><li>{{blog.author}} : {{blog.title}}</li></router-link>
+          <router-link  :to="{name: 'Blog', params: {title: blog.title}}"><li>{{blog.author}} : {{blog.title}}</li></router-link>
         </ul>
       </div>
    </div>
@@ -22,7 +22,7 @@ export default {
     return {
       blogs: store.methods.getBlogs()
       }
-  }
+  },
 
 }
 
