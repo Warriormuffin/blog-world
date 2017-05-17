@@ -1,16 +1,29 @@
 <template>
   <div class="blog-home">
+   <div class="row">
+    <h1><img src="./../assets/logo.png">ue Blogs</h1>
+    <button>New Blog</button>
+      <div>
+        <ul v-for="blog in blogs">
+          <li></li>
+        </ul>
+      </div>
+   </div>
   </div>
 
 </template>
 
 <script>
+import {store} from '../store/blogStore'
 export default {
   name: 'BlogHome',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      getBlogs(){
+
+      }
     }
+
   }
 }
 </script>
@@ -33,5 +46,9 @@ li {
 
 a {
   color: #42b983;
+}
+
+img{
+  width: 30px;
 }
 </style>
