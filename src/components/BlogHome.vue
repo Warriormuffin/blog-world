@@ -4,6 +4,7 @@
     <h1><img src="./../assets/logo.png">ue Blogs</h1>
     <button>New Blog</button>
       <div>
+      <br>
         <ul v-for="blog in blogs">
           <li>{{blog.author}} : {{blog.title}}</li>
         </ul>
