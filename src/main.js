@@ -3,6 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import BlogHome from '@/components/BlogHome'
+import Blog from '@/components/Blog'
+import NewBlog from '@/components/NewBlog'
 
 Vue.config.productionTip = false
 
