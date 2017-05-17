@@ -4,7 +4,7 @@
       <router-link to="/">Back to Home</router-link>
     </div>
      <input type = "text" v-model="title" placeholder="Title">
-     <input type = "text" v-model='body' placeholder="Add Your Blog">
+     <input type = "text-form" v-model='body' placeholder="Add Your Blog">
      <input type = "text" v-model='author' placeholder= 'Author Name'>
     <button @click='addBlog'>Add Your Blog</button>
   </div>
