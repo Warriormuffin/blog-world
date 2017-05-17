@@ -3,7 +3,12 @@ var state = {
     title: 'SomeBlog',
     body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium quidem qui quisquam ducimus enim quas, eos, provident magni illo magnam obcaecati, iste unde minima sint reprehenderit sed. Ratione nihil, ex?',
     author: 'SomeGuy'
-  }]
+  },{
+    title: 'TestBlog',
+    body: 'THINGS ARE GOOD HERE AND WE LOVE VUE SO MUCH UFN',
+    author: "SomeOtherGuy"
+  }
+  ]
   }
 
 let store = {
