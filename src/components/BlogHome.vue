@@ -19,13 +19,12 @@ export default {
   name: 'BlogHome',
   data () {
     return {
-      getBlogs(){
-
+      blogs: store.methods.getBlogs()
       }
     }
 
-  }
 }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
