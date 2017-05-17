@@ -5,7 +5,7 @@
     <button>New Blog</button>
       <div>
         <ul v-for="blog in blogs">
-          <li></li>
+          <li>{{blog.author}} : {{blog.title}}</li>
         </ul>
       </div>
    </div>
