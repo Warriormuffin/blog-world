@@ -25,7 +25,7 @@
     },
     methods: {
       addBlog() {
-        store.methods.adBlog({title: this.title, body: this.body, author: this.author})
+        store.methods.addBlog({title: this.title, body: this.body, author: this.author})
       }
     }
   }

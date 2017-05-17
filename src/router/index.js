@@ -14,7 +14,7 @@ export default new Router({
       component: BlogHome
     },
     {
-      path: '/blog',
+      path: '/blog/:title',
       name: 'Blog',
       component: Blog
     },
