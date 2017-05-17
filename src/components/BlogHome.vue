@@ -2,7 +2,7 @@
   <div class="blog-home">
    <div class="row">
     <h1><img src="./../assets/logo.png">ue Blogs</h1>
-    <button>New Blog</button>
+    <router-link to="/new-blog"><button>New Blog</button></router-link>
       <div>
       <br>
         <ul v-for="blog in blogs">

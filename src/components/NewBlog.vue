@@ -1,8 +1,9 @@
 <template>
   <div class="new-blog">
     <div>
-      <router-link to="/">Back to Home</router-link>
+      <router-link to="/"><button>Back Home</button></router-link>
     </div>
+    <br>
      <input type = "text" v-model="title" placeholder="Title">
      <input type = "text-form" v-model='body' placeholder="Add Your Blog">
      <input type = "text" v-model='author' placeholder= 'Author Name'>
@@ -33,5 +34,12 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+a {
+  color: #42b983;
+}
+
+button{
+  color: #42b983;
+}
 
 </style>
