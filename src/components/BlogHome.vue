@@ -6,7 +6,9 @@
       <div>
       <br>
         <ul v-for="blog in blogs">
+          <!--This is crazy but follow this pattern for future projects allows you to pass data like {{}} but in a url-->
           <router-link  :to="{name: 'Blog', params: {title: blog.title}}"><li>{{blog.author}} : {{blog.title}}</li></router-link>
+          <!--VERY IMPORTANT ABOVE-->
         </ul>
       </div>
    </div>
