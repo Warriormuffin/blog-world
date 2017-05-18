@@ -1,13 +1,18 @@
 <template>
   <div class="new-blog">
-    <div>
-      <router-link to="/"><button>Back Home</button></router-link>
-    </div>
-    <br>
-     <input type = "text" v-model="title" placeholder="Title">
-     <input type = "text-form" v-model='body' placeholder="Add Your Blog">
+      <div>
+        <input type = "text" v-model="title" placeholder="Blog Title">
+      </div>
+        <br>
+        <br>
+     <div>
+        <textarea v-model='body' rows="10" cols="70"></textarea>
+     </div>
+        <br>
+        <br>
      <input type = "text" v-model='author' placeholder= 'Author Name'>
-    <button @click='addBlog'>Add Your Blog</button>
+
+    <router-link to="/"><button @click='addBlog'>Add Your Blog</button></router-link>
   </div>
 </template>
 

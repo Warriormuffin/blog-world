@@ -51,6 +51,7 @@ a {
 }
 
 img{
-  width: 30px;
+  width: 37px;
+  height: 40px;
 }
 </style>

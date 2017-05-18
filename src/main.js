@@ -6,6 +6,7 @@ import router from './router'
 import BlogHome from '@/components/BlogHome'
 import Blog from '@/components/Blog'
 import NewBlog from '@/components/NewBlog'
+import NavBar from '@/components/NavBar'
 
 Vue.config.productionTip = false
 
